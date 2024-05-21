@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Green Mart</title>
+
+    <link rel="stylesheet" href="./CSS/reset.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/main.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/homeCSS.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+
+<body>
+    <header>
+        <!--signup/login bar-->
+        <section>
+            <div class="infoBar">
+                <p>24 hour island wide delivery  |  Sign-up  |  Login</p>
+                <img src="./IMAGES/profilepic.png" alt="profilepic">
+            </div>               
+        </section>
+        <!--navigation bar-->
+        <nav class="navBar">
+            <div class="logo">
+                <img src="./IMAGES/logo (2).png" alt="logo">
+            </div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUsPage.html">About Us</a></li>
+                    <li><a href="./dairyPage.html">Dairy products</a></li>
+                    <li><a href="./vegetablePage.html">Vegetables</a></li>
+                    <li><a href="./cosmeticsPage.html">Costemics</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="./LoyaltyPage.html">Loyalty</a></li>
+                </ul>
+            <div class="shoppingCart">
+                <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
+                <p>Rs 0.0</p>
+            </div>
+        </nav>
+    <div class="searchBar">
+          <input type="text" placeholder="Search..." class="searchInput">
+          <button class="searchButton" type="submit">Search</button>
+      </div>
+    </header>
+<!--banner for promotion-->
+<main>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./IMAGES/banner1.png" alt="promotional banner for ramadhan">
+      </div>
+      <div class="swiper-slide">
+        <img src="./IMAGES/banner2.png" alt="promotional banner">
+      </div>
+      <div class="swiper-slide">
+        <img src="./IMAGES/banner3.png" alt="promotional banner">
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<script src="./JS/main.js"></script>
+</main>
+<!--welcome section and info about green mart-->
+<section class="welcomeMsg">
+  <h2>Welcome to Green Mart!</h2>
+  <p id="para">At Green Mart, we're dedicated to providing you with the freshest produce and highest quality groceries. Here's a glimpse of what makes us your go-to supermarket!</p>
+  <h1>Why Choose Green Mart?</h1>  
+  <ol>
+    <li>Fresh Selection: We source our fruits, vegetables, and groceries from trusted suppliers to ensure freshness and quality.</li>
+    <li>Wide Variety: Explore a diverse range of products, from locally sourced organic produce to international specialty items.</li>
+    <li>Convenience: With multiple store locations and online ordering options, shopping at Green Mart is convenient and accessible.</li>
+    <li>Exceptional Service: Our friendly staff are here to assist you and provide personalized recommendations for your shopping needs.</li>
+  </ol>
+  <h1>Customer Satisfaction Guaranteed!</h1>
+  <ul>
+    <li>Quality Assurance: We stand behind the quality of our products and strive to exceed your expectations.</li>
+    <li>Feedback Welcome: Have a suggestion or comment? We value your feedback and are always looking for ways to improve your shopping experience.</li>
+  </ul>
+</section>
+<!--best sellers category-->
+<section>
+  <div class="category-heading">
+    <div class="line"></div>
+    <h2>Best Sellers</h2>
+    <div class="line"></div>
+  </div>
+<div class="item-grid">
+    <div class="item">
+      <div class="item-content">
+        <img src="../IMAGES/shampoo1.png" alt="shampoo">
+        <p>Clear Anti Dandruff Nourishing Shampoo 200ml</p>
+        <p id="price">Rs. 310 LKR</p>
+        <a href="../HTML Pages/orderPage.html"><button> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <!-- Repeat the above div structure for each item -->
+    <div class="item">
+      <div class="item-content">
+        <img src="../IMAGES/milk1.png" alt="fresh milk">
+        <p>Ambewela Full Cream Fresh Milk 1000ml</p>
+        <p id="price">Rs. 530 LKR</p>
+        <a href="../HTML Pages/orderPage.html"><button> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="../IMAGES/cream1.webp" alt="cream">
+        <p>POND'S Bright Beauty Day <br> Cream 23g</p>
+        <p id="price">Rs. 600 LKR</p>
+        <button> <a href="../HTML Pages/orderPage.html">Add to Cart <i class="fas fa-cart-plus"></i></a></button>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="../IMAGES/yoghurt1.webp" alt="yoghurt">
+        <p>Highland Set Yoghurt <br> (Vannila) 80g </p>
+        <p id="price">Rs. 310 LKR</p>
+        <button> <a href="../HTML Pages/orderPage.html">Add to Cart <i class="fas fa-cart-plus"></i></a></button>
+      </div>
+    </div>
+</div>
+</section>
+<!--shop by category-->
+<div class="category-heading">
+  <div class="line"></div>
+  <h2>Shop by Category</h2>
+  <div class="line"></div>
+</div>
+<section class="grid-section">
+    <div class="grid-container">
+      <div class="grid-item1">
+        <a href="#">
+        <h2 class="boxHeading">Dairy Products</h2>
+        <p class="boxPara">Explore the richness of dairy with our premium selection! From creamy cheeses to wholesome milk and refreshing yogurts, our products promise unmatched freshness and flavor. Elevate your culinary experience with our exquisite dairy delights today!</p>      
+        </a>
+      </div>
+      <div class="grid-item2">
+        <h2 class="boxHeading">Fresh Vegetables</h2>
+        <p class="boxPara">Indulge in the freshness of farm-picked vegetables! Our vibrant selection offers crisp greens, colorful peppers, and juicy tomatoes, packed with flavor and nutrients. Elevate your meals with our wholesome produce, sourced directly from trusted farms. Explore our range for a healthy and delicious addition to your plate!</p>
+      </div>
+      <div class="grid-item3">
+        <h2 class="boxHeading">Costemics and Skin Care</h2>
+        <p class="boxPara">Transform your beauty routine with our top-notch cosmetics! From skincare essentials to makeup must-haves, we offer quality products to enhance your natural glow. Crafted with care and premium ingredients, our cosmetics inspire confidence and radiance. Explore our collection and discover the key to timeless beauty!</p>
+      </div>
+    </div>
+  </section>
+<footer>
+<div class="footerTop">
+  <div class="logoContainer">
+  <img class="logofooter" src="../IMAGES/logo (2).png" alt="Green mart logo">
+  </div>
+  <div class="socialContainer">
+    <ul class="social-media">
+      <li>
+        <img src="../IMAGES/fblogo.png" alt="facebook logo">
+        <a href="your-etsy-url" class="etsy"></a>
+      </li>
+      <li>
+        <img src="../IMAGES/ytlogo.png" alt="youtube logo">
+        <a href="your-facebook-url" class="facebook"></a>
+      </li>
+      <li>
+        <img src="../IMAGES/iglogo.png" alt="instagram logo">
+        <a href="your-instagram-url" class="instagram"></a>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="footerBottom">
+  <div class="footerColumn">
+    <div class="address">
+      <p>Green Mart Marketing Pvt Ltd.</p>
+      <p>No. 151, Colombo Rd, Colombo 4, Sri Lanka</p>
+    </div>
+    <div class="number">
+      <img src="../IMAGES/call logo.png" alt="call logo">
+      <p>+94 11 7837 078</p>
+    </div>
+    <p class="openmsg">(Open Daily from 9AM to 9PM)</p>
+</div>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="../HTML Pages/vegetablePage.html">Fresh Vegetables</a></li>
+          <li><a href="../HTML Pages/dairyPage.html">Dairy Products</a></li>
+          <li><a href="../HTML Pages/cosmeticsPage.html">Cosmetics and Skin care</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../HTML Pages/homePage.html">Home</a></li>
+          <br>
+          <li> <a href="../HTML Pages/aboutUsPage.html"> About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Customer Services</h3>
+        <ul>
+          <li><a href="../HTML Pages/#">Sign-up</a></li>
+          <br>
+          <li><a href="../HTML Pages/#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+<div class="container">
+  <div class="copyright">Copyright © 2023 Green Mart Marketing. All rights reserved</div>
+  <div class="payment-methods">
+    <img src="../IMAGES/paymentmethod1.png" alt="Payment Method 1" />
+    <img src="../IMAGES/paymentmethod2.png" alt="Payment Method 2" />
+    <img src="../IMAGES/paymentmethod3.png" alt="Payment Method 3" />
+    <img src="../IMAGES/paymentmethod4.png" alt="Payment Method 4" />
+  </div>
+</div>
+</body>
+</html>

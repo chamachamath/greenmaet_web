@@ -1,0 +1,138 @@
+.mainCont {
+    height: auto;
+    padding: 50px;
+    text-align: left;
+    line-height: 1.5;
+    text-align: left;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    background-image: url(../IMAGES/dairycover.png);
+    background-size: cover;
+    object-position: center; 
+}
+
+.mainCont h2{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.mainCont p{
+    font-size: 16px;
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.dairyProducts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+  .item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+}
+  
+  .item {
+    height: 420px;
+    width: 300px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .item-grid :hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .item :hover{
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .item-content img{
+    height: 100%;
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: -80px;
+    align-items: center;
+  }
+  
+  .item-content p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 10px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  #price {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #05b917;
+    margin: 0 10px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    margin-top: 15px;
+  }
+  
+  .item-content button {
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 180px;
+  }
+  
+  .item-content button:hover {
+    background: #008000; /* Change the background color to green */
+    color: #ffffff; /* Change the text color to white */
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .item-content button:hover i {
+    color: #ffffff; /* Change the icon color to white */
+    outline: none;
+    box-shadow: none;
+  }
