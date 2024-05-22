@@ -320,7 +320,7 @@ ul.social-media img {
     "wdth" 100;
   margin-bottom: 40px;
   margin-left: 15px;
-  margin-top: -20px;
+  margin-top: -40px;
 }
 
 .footerBottom {
@@ -340,7 +340,6 @@ ul.social-media img {
 }
 
 .address,
-.number,
 .openmsg {
   margin-bottom: 10px;
 }
