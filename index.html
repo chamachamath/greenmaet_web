@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Mart</title>
-
     <link rel="stylesheet" href="./CSS/reset.css" type="text/css">
     <link rel="stylesheet" href="./CSS/main.css" type="text/css">
     <link rel="stylesheet" href="./CSS/homeCSS.css" type="text/css">
@@ -15,7 +14,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
 </head>
 
 <body>
@@ -23,34 +21,46 @@
         <!--signup/login bar-->
         <section>
             <div class="infoBar">
-                <p>24 hour island wide delivery  |  Sign-up  |  Login</p>
+                <p>24 hour island wide delivery | Sign-up | Login</p>
                 <img src="./IMAGES/profilepic.png" alt="profilepic">
-            </div>               
+            </div>
         </section>
         <!--navigation bar-->
         <nav class="navBar">
             <div class="logo">
                 <img src="./IMAGES/logo (2).png" alt="logo">
             </div>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./aboutUsPage.html">About Us</a></li>
-                    <li><a href="./dairyPage.html">Dairy products</a></li>
-                    <li><a href="./vegetablePage.html">Vegetables</a></li>
-                    <li><a href="./cosmeticsPage.html">Costemics</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="./LoyaltyPage.html">Loyalty</a></li>
-                </ul>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutUsPage.html">About Us</a></li>
+                <li><a href="./dairyPage.html">Dairy products</a></li>
+                <li><a href="./vegetablePage.html">Vegetables</a></li>
+                <li><a href="./cosmeticsPage.html">Costemics</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="./LoyaltyPage.html">Loyalty</a></li>
+            </ul>
             <div class="shoppingCart">
                 <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
                 <p>Rs 0.0</p>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
         </nav>
-    <div class="searchBar">
-          <input type="text" placeholder="Search..." class="searchInput">
-          <button class="searchButton" type="submit">Search</button>
-      </div>
+        <div class="searchBar">
+            <input type="text" placeholder="Search..." class="searchInput">
+            <button class="searchButton" type="submit">Search</button>
+        </div>
     </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navBar ul');
+            nav.classList.toggle('show');
+        }
+    </script>
 <!--banner for promotion-->
 <main>
 <div class="swiper-container">

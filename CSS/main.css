@@ -97,7 +97,7 @@ html {
 .navBar img{
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
+    width: 180px;
     height: 80px;
     padding-top: 5px;
     padding-right: 25px;
@@ -124,7 +124,7 @@ html {
 .shoppingCart p{
     align-items: center;
     justify-content: flex-end;
-    padding: 0px 40px 30px 0px;
+    padding: 0px 20px 30px 0px;
     color: #ffffff;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
@@ -319,7 +319,7 @@ ul.social-media img {
     "wdth" 100;
   margin-bottom: 40px;
   margin-left: 15px;
-  margin-top: -20px;
+  margin-top: -40px;
 }
 
 .footerBottom {
@@ -486,14 +486,107 @@ footer {
   color: rgb(255, 255, 255);
 }
 
-.address,
-.number,
-.openmsg {
-  margin-bottom: 10px;
+/*responsive styles*/
+
+@media (max-width: 768px) {
+  .infoBar {
+    flex-direction: row;
+  }
+  .infoBar p {
+    flex: none;
+  }
+  .infoBar img {
+    margin: 10px; /* add some margin for better layout */
+  }
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
 }
 
 
+@media (max-width: 768px) {
+  .logo img {
+    margin-bottom: 10px;
+    width: 60%;
+    padding-right: 15px;
+  }
+}
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+.bar {
+  height: 2px;
+  width: 20px;
+  background-color: rgb(0, 255, 4);
+  margin: 2px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .navBar ul {
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      background-color: #0b2f00;
+      transition: 0.5s;
+      z-index: 101;
+  }
+
+  .navBar ul.show {
+      left: 0;
+  }
+
+  .navBar ul li {
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .navBar .logo {
+      flex-grow: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoppingCart img {
+    width: 12%;
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .shoppingCart p {
+    padding-top: 25px;
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .shoppingCart img {
+    width: 12%;
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .shoppingCart p {
+    padding-top: 25px;
+    font-size: 8px;
+  }
+}
 
 
 
