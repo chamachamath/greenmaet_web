@@ -319,7 +319,7 @@ ul.social-media img {
     "wdth" 100;
   margin-bottom: 40px;
   margin-left: 15px;
-  margin-top: -40px;
+  margin-top: -20px;
 }
 
 .footerBottom {
@@ -485,6 +485,13 @@ footer {
 .footer-column ul li a:hover{
   color: rgb(255, 255, 255);
 }
+
+.address,
+.number,
+.openmsg {
+  margin-bottom: 10px;
+}
+
 
 
 
