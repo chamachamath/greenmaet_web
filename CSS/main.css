@@ -182,7 +182,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: auto;
-  padding: 0 40px;
   background-color: #0b2f00;
 }
 
@@ -339,11 +338,6 @@ ul.social-media img {
   flex: 1;
 }
 
-.address,
-.openmsg {
-  margin-bottom: 10px;
-}
-
 .number img {
   height: 20px;
   margin-right: 10px;
@@ -364,11 +358,6 @@ footer {
 .address {
   color: #fff;
   text-align: left;
-}
-
-.logofooter {
-  width: 200px;
-  height: 90px;
 }
 
 .number img {
