@@ -15,39 +15,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <!--signup/login bar-->
-        <section>
-            <div class="infoBar">
-                <p>24 hour island wide delivery  |  Sign-up  |  Login</p>
-                <img src="./IMAGES/profilepic.png" alt="profilepic">
-            </div>               
-        </section>
-        <!--navigation bar-->
-        <nav class="navBar">
-            <div class="logo">
-                <img src="./IMAGES/logo (2).png" alt="logo">
-            </div>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./aboutUsPage.html">About Us</a></li>
-                    <li><a href="./dairyPage.html">Dairy products</a></li>
-                    <li><a href="./vegetablePage.html">Vegetables</a></li>
-                    <li><a href="./cosmeticsPage.html">Costemics</a></li>
-                    <li><a href="./orderPage.html">Order</a></li>
-                    <li><a href="./LoyaltyPage.html">Loyalty</a></li>
-
-                </ul>
-            <div class="shoppingCart">
-                <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
-                <p>Rs 0.0</p>
-            </div>
-        </nav>
-    <div class="searchBar">
+  <header>
+      <!--signup/login bar-->
+      <section>
+          <div class="infoBar">
+              <p>24 hour island wide delivery | Sign-up | Login</p>
+              <img src="./IMAGES/profilepic.png" alt="profilepic">
+          </div>
+      </section>
+      <!--navigation bar-->
+      <nav class="navBar">
+          <div class="logo">
+              <img src="./IMAGES/logo (2).png" alt="logo">
+          </div>
+          <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./aboutUsPage.html">About Us</a></li>
+              <li><a href="./dairyPage.html">Dairy products</a></li>
+              <li><a href="./vegetablePage.html">Vegetables</a></li>
+              <li><a href="./cosmeticsPage.html">Costemics</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="./LoyaltyPage.html">Loyalty</a></li>
+          </ul>
+          <div class="shoppingCart">
+              <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
+              <p>Rs 0.0</p>
+          </div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+      </nav>
+      <div class="searchBar">
           <input type="text" placeholder="Search..." class="searchInput">
-          <button class="searchButton" type="submit">Search</button>
+          <button class="searchButton" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
       </div>
-    </header>
+  </header>
+
+  <script>
+      function toggleMenu() {
+          const nav = document.querySelector('.navBar ul');
+          nav.classList.toggle('show');
+      }
+  </script>
     <main class="mainImg">
         <img src="./IMAGES/aboutUs.png" alt="green mart">
     </main>
