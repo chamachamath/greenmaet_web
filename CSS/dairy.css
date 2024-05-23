@@ -136,3 +136,48 @@
     outline: none;
     box-shadow: none;
   }
+
+  @media (max-width: 768px) {
+    .mainCont {
+        padding: 10px;
+    }
+
+    .mainCont h2 {
+        font-size: 18px;
+    }
+
+    .mainCont p {
+        font-size: 13px;
+        margin-bottom: 20px;
+        justify-content: left;
+    }
+}
+
+/* General styles for the container */
+.item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Ensure images are responsive */
+.item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+      flex: 1 1 100%; /* 1 item per row */
+  }
+}
+
