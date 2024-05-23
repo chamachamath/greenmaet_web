@@ -307,7 +307,7 @@
 
   .background-image{
     height: 340px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-bottom: 0;
   }
 }
@@ -348,11 +348,16 @@
   .item-grid {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center; /* Center items horizontally */
   }
 
     .category-heading {
       display: none;
+    }
+
+    .item{
+      display: flex; /* Add flex properties to center content */
+      justify-content: center;
     }
 }
 
