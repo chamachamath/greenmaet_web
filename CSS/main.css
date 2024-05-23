@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 header{
     width: 100%;
 }
@@ -495,7 +500,7 @@ footer {
   .infoBar {
     flex-direction: row;
     height: 30px;
-    width: 96.8%;
+    width: 94.5%;
   }
   .infoBar p {
     flex: none;
@@ -543,11 +548,11 @@ footer {
 @media (max-width: 768px) {
   .navBar ul {
       flex-direction: column;
-      width: 109.4%;
+      width: 112.8%;
       height: 100vh;
       position: absolute;
       top: 0;
-      left: -109.4%;
+      left: -112.8%;
       background-image: url(../IMAGES/responsive.png);
       background-position: cover;
       background-repeat: no-repeat;
@@ -631,34 +636,58 @@ footer {
     flex-direction: column;
     gap: 0; /* Adjust space between elements for vertical stacking */
     padding-bottom: 0;
+    padding-left: 50px;
   }
 
   .social-media {
     justify-content: center;
     margin-top: -105px;
-    margin-left: 91px;
   }
 
   .footer-grid {
     display: none;
   }
 
+  .socialContainer {
+    padding-left: 20px;
+  }
+
+  .logofooter {
+    padding-left: 3px;
+  }
+
   .openmsg p,
-  .number p,
   .address p{
     text-align: center;
+    font-size: 12px;
+  }
+
+  .number {
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .number img {
+    width: 20px;
+    height: 20px;
+    padding-right: 0;
+    margin-right: 5px;
+  }
+
+  .number{
+    padding-left: 45px;
+  }
+
+  .number p{
+    font-size: 10px;
   }
 
   .address{
     padding-top: 20px;
   }
 
-  .logofooter{
-    padding-left: 87px;
-  }
-
   .number, .openmsg {
-    padding-left: 50px;
+    font-size: 10px;
   }
 
   .payment-methods {
@@ -669,6 +698,15 @@ footer {
     height: 60px;
   }
 
+  .copyright {
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .openmsg {
+    padding-left: 28px;
+  }
 }
 
 

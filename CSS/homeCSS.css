@@ -425,6 +425,12 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.boxHeading {
+  padding-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -438,5 +444,4 @@ body {
     padding-right: 20px;
   }
 }
-
 
