@@ -192,7 +192,7 @@ body {
   
   .grid-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow-x: auto;
     margin-top: 2%;
     margin-left: 2%;
@@ -206,7 +206,7 @@ body {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: #051500;
     padding: 3%;
@@ -384,21 +384,25 @@ body {
 
 @media (max-width: 480px) {
   .welcomeMsg h2 {
-    font-size: 1.5rem;
+    font-size: 17px;
   }
 
   .welcomeMsg p {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .welcomeMsg h1 {
-    font-size: 1.2rem;
+    font-size: 16px;
   }
 
   .welcomeMsg li {
-    font-size: 0.9rem;
+    font-size: 13px;
     margin: 10px;
     flex-basis: 100%;
+  }
+  .category-heading h2 {
+    font-size: 18px;
+    padding: 2px;
   }
 }
   
@@ -415,6 +419,21 @@ body {
 @media (max-width: 480px) {
   .item {
     width: 100%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item1, .grid-item2, .grid-item3 {
+    margin: 20px 0;
   }
 }
 
