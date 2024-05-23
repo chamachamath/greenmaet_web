@@ -141,7 +141,6 @@ html {
   
   .searchBar {
     position: absolute;
-    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
@@ -208,7 +207,6 @@ footer {
 .logofooter {
   width: 200px;
   height: 90px;
-  padding: 10px 10px 40px 10px;
 }
 
 ul.social-media {
@@ -353,6 +351,12 @@ footer {
   align-items: flex-start;
 }
 
+.address,
+.openmsg,
+.number {
+  padding: 10px;
+}
+
 .logoContainer,
 .address {
   color: #fff;
@@ -491,6 +495,7 @@ footer {
   .infoBar {
     flex-direction: row;
     height: 30px;
+    width: 96.8%;
   }
   .infoBar p {
     flex: none;
@@ -538,11 +543,11 @@ footer {
 @media (max-width: 768px) {
   .navBar ul {
       flex-direction: column;
-      width: 100%;
+      width: 109.4%;
       height: 100vh;
       position: absolute;
       top: 0;
-      left: -100%;
+      left: -109.4%;
       background-image: url(../IMAGES/responsive.png);
       background-position: cover;
       background-repeat: no-repeat;
@@ -621,6 +626,50 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    gap: 0; /* Adjust space between elements for vertical stacking */
+    padding-bottom: 0;
+  }
+
+  .social-media {
+    justify-content: center;
+    margin-top: -105px;
+    margin-left: 91px;
+  }
+
+  .footer-grid {
+    display: none;
+  }
+
+  .openmsg p,
+  .number p,
+  .address p{
+    text-align: center;
+  }
+
+  .address{
+    padding-top: 20px;
+  }
+
+  .logofooter{
+    padding-left: 87px;
+  }
+
+  .number, .openmsg {
+    padding-left: 50px;
+  }
+
+  .payment-methods {
+    display: none;
+  }
+
+  .container {
+    height: 60px;
+  }
+
+}
 
 
 

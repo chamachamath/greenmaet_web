@@ -433,7 +433,9 @@ body {
   }
 
   .grid-item1, .grid-item2, .grid-item3 {
-    margin: 20px 0;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
