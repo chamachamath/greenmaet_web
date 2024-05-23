@@ -283,5 +283,95 @@
   }
 
   
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-overlay h2 {
+      font-size: 28px;
+      padding-left: 20px;
+      padding-top: 40px;
+  }
+
+  .text-overlay p {
+      font-size: 14px;
+      padding-left: 20px;
+      padding-top: 10px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .text-overlay{
+    width: 80%;
+  }
+
+  .background-image{
+    height: 340px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-image {
+      padding: 20px 10px;
+  }
+
+  .text-overlay h2 {
+      font-size: 26px;
+  }
+
+  .text-overlay p {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .venues {
+    display: none;
+  }
+}
+
+.item-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.item-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments using flexbox for smaller screens */
+@media (max-width: 768px) {
+  .item-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+    .category-heading {
+      display: none;
+    }
+}
+
+@media (max-width: 600px) {
+  .item {
+      flex: 1 1 100%; /* One item per row */
+      margin-bottom: 20px; /* Add margin to maintain spacing */
+  }
+
+  .item-content {
+      padding: 15px;
+  }
+
+  .item-content button {
+      padding: 8px 16px;
+  }
+}
+
+
+  
 
 

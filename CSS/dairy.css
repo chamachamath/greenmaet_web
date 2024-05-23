@@ -149,7 +149,7 @@
     .mainCont p {
         font-size: 13px;
         margin-bottom: 20px;
-        justify-content: left;
+        text-align: left;    
     }
 }
 

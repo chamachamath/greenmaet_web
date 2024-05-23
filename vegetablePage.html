@@ -15,39 +15,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <!--signup/login bar-->
-        <section>
-            <div class="infoBar">
-                <p>24 hour island wide delivery  |  Sign-up  |  Login</p>
-                <img src="./IMAGES/profilepic.png" alt="profilepic">
-            </div>               
-        </section>
-        <!--navigation bar-->
-        <nav class="navBar">
-            <div class="logo">
-                <img src="./IMAGES/logo (2).png" alt="logo">
-            </div>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./aboutUsPage.html">About Us</a></li>
-                    <li><a href="./dairyPage.html">Dairy products</a></li>
-                    <li><a href="./vegetablePage.html">Vegetables</a></li>
-                    <li><a href="./cosmeticsPage.html">Costemics</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="./LoyaltyPage.html">Loyalty</a></li>
-
-                </ul>
-            <div class="shoppingCart">
-                <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
-                <p>Rs 0.0</p>
-            </div>
-        </nav>
-    <div class="searchBar">
-          <input type="text" placeholder="Search.." class="searchInput">
-          <button class="searchButton" type="submit">Search</button>
+  <header>
+      <!--signup/login bar-->
+      <section>
+          <div class="infoBar">
+              <p>24 hour island wide delivery | Sign-up | Login</p>
+              <img src="./IMAGES/profilepic.png" alt="profilepic">
+          </div>
+      </section>
+      <!--navigation bar-->
+      <nav class="navBar">
+          <div class="logo">
+              <img src="./IMAGES/logo (2).png" alt="logo">
+          </div>
+          <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./aboutUsPage.html">About Us</a></li>
+              <li><a href="./dairyPage.html">Dairy products</a></li>
+              <li><a href="./vegetablePage.html">Vegetables</a></li>
+              <li><a href="./cosmeticsPage.html">Costemics</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="./LoyaltyPage.html">Loyalty</a></li>
+          </ul>
+          <div class="shoppingCart">
+              <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
+              <p>Rs 0.0</p>
+          </div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+      </nav>
+      <div class="searchBar">
+          <input type="text" placeholder="Search..." class="searchInput">
+          <button class="searchButton" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
       </div>
-<section class="background-image">
+  </header>
+
+  <script>
+      function toggleMenu() {
+          const nav = document.querySelector('.navBar ul');
+          nav.classList.toggle('show');
+      }
+  </script>
+  <section class="background-image">
         <div class="text-overlay">
             <h2>Freshly Sourced <br> Vegetables from small <br> farms across the island</h2>
             <p>Welcome to Green Mart! Discover the freshest locally sourced veggies <br>straight from our country's farms. From crisp lettuce to juicy tomatoes, <br>enjoy premium quality and support local agriculture with every bite.</p>
