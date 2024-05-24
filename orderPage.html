@@ -6,7 +6,7 @@
     <title>Green Mart</title>
     <link rel="stylesheet" href="./CSS/reset.css" type="text/css">
     <link rel="stylesheet" href="./CSS/main.css" type="text/css">
-    <link rel="stylesheet" href="./CSS/vegetables.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/order.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
@@ -19,27 +19,239 @@
         <!--signup/login bar-->
         <section>
             <div class="infoBar">
-                <p>24 hour island wide delivery  |  Sign-up  |  Login</p>
+                <p>24 hour island wide delivery | Sign-up | Login</p>
                 <img src="./IMAGES/profilepic.png" alt="profilepic">
-            </div>               
+            </div>
         </section>
         <!--navigation bar-->
         <nav class="navBar">
             <div class="logo">
                 <img src="./IMAGES/logo (2).png" alt="logo">
             </div>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./aboutUsPage.html">About Us</a></li>
-                    <li><a href="./dairyPage.html">Dairy products</a></li>
-                    <li><a href="./vegetablePage.html">Vegetables</a></li>
-                    <li><a href="./cosmeticsPage.html">Costemics</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="./LoyaltyPage.html">Loyalty</a></li>
-
-                </ul>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutUsPage.html">About Us</a></li>
+                <li><a href="./dairyPage.html">Dairy products</a></li>
+                <li><a href="./vegetablePage.html">Vegetables</a></li>
+                <li><a href="./cosmeticsPage.html">Costemics</a></li>
+                <li><a href="./orderPage.html">Order</a></li>
+                <li><a href="./LoyaltyPage.html">Loyalty</a></li>
+            </ul>
             <div class="shoppingCart">
                 <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
                 <p>Rs 0.0</p>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
         </nav>
+        <div class="searchBar">
+            <input type="text" placeholder="Search..." class="searchInput">
+            <button class="searchButton" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navBar ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+
+<!--my cart table-->
+<section class="cart">
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Image</th>
+                <th>PPU</th>
+                <th>Qty</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ambewela Full Cream Fresh Milk 1000ml</td>
+                <td><img src="./IMAGES/milk1.png" alt="Anchor Milk Powder"></td>
+                <td>530 LKR</td>
+                <td>1</td>
+                <td>530 LKR</td>
+            </tr>
+            <tr>
+                <td>Anchor Drinking Yoghurt Vanilla 180ml</td>
+                <td><img src="./IMAGES/dairy12.jpg" alt="Anchor Drinking Yoghurt Vanilla 180ml"></td>
+                <td>130 LKR</td>
+                <td>2</td>
+                <td>260 LKR</td>
+            </tr>
+            <tr>
+                <td>Glow & Lovely Multivitamin Cream 50g</td>
+                <td><img src="./IMAGES/cos3.jpg" alt="Glow & Lovely Multivitamin Cream 50g"></td>
+                <td>650 LKR</td>
+                <td>1</td>
+                <td>650 LKR</td>
+            </tr>
+            <tr>
+                <td><b>Coconut</b></td>
+                <td><img src="./IMAGES/vege16.jpg" alt="coconut"></td>
+                <td>114 LKR</td>
+                <td>2</td>
+                <td>228 LKR</td>
+            </tr>
+            <tr>
+                <td><b>Janet Ayurveda Wild Tang. Lip Balm 3.5g</B></td>
+                <td><img src="./IMAGES/cos14.jpg" alt="Janet Ayurveda Wild Tang. Lip Balm 3.5g"></td>
+                <td>300 LKR</td>
+                <td>2</td>
+                <td>600 LKR</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><b>Grand Total</b></td>
+                <td><b>2,480 LKR</b></td>
+            </tr>
+        </tfoot>
+    </table>
+  </section>
+<section class="container1">
+		<div class="left">
+			<h3>BILLING ADDRESS</h3>
+			<form>
+				Full name
+				<input type="text" name="" placeholder="Enter name">
+				Email
+				<input type="text" name="" placeholder="Enter email">
+
+				Address
+				<input type="text" name="" placeholder="Enter address">
+				
+				Province
+				<input type="text" name="" placeholder="Enter Province">
+				<div id="zip">
+					<label>
+						City
+						<select>
+							<option>Choose city..</option>
+							<option>Kandy</option>
+							<option>Colombo</option>
+							<option>Galle</option>
+						</select>
+					</label>
+						<label>
+						Zip code
+						<input type="number" name="" placeholder="Zip code">
+					</label>
+				</div>
+			</form>
+		</div>
+		<div class="right">
+			<h3>PAYMENT</h3>
+			<form>
+				Accepted Payments <br>
+				<img src="./IMAGES/paymentmethod1.png" alt="visa">
+				<img src="./IMAGES/paymentmethod2.png" alt="amex">
+                <img src="./IMAGES/paymentmethod3.png" alt="master">
+                <img src="./IMAGES/paymentmethod4.png" alt="koko">
+				<br><br>
+
+				Credit card number
+			<input type="text" name="" placeholder="Enter card number">
+				
+				Exp month
+				<input type="text" name="" placeholder="Enter Month">
+				<div id="zip">
+					<label>
+						Exp year
+						<select>
+							<option>Choose Year..</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+						</select>
+					</label>
+						<label>
+						CVV
+						<input type="number" name="" placeholder="CVV">
+					</label>
+				</div>
+			</form>
+			<input type="submit" name="" value="Proceed to Checkout">
+		</div>
+	</section>
+    <footer>
+        <div class="footerTop">
+          <div class="logoContainer">
+          <img class="logofooter" src="./IMAGES/logo (2).png" alt="Green mart logo">
+          </div>
+          <div class="socialContainer">
+            <ul class="social-media">
+              <li>
+                <img src="./IMAGES/fblogo.png" alt="facebook logo">
+                <a href="your-etsy-url" class="etsy"></a>
+              </li>
+              <li>
+                <img src="./IMAGES/ytlogo.png" alt="youtube logo">
+                <a href="your-facebook-url" class="facebook"></a>
+              </li>
+              <li>
+                <img src="./IMAGES/iglogo.png" alt="instagram logo">
+                <a href="your-instagram-url" class="instagram"></a>
+              </li>
+            </ul>
+        </div>
+        </div>
+        <div class="footerBottom">
+          <div class="footerColumn">
+            <div class="address">
+              <p>Green Mart Marketing Pvt Ltd.</p>
+              <p>No. 151, Colombo Rd, Colombo 4, Sri Lanka</p>
+            </div>
+            <div class="number">
+              <img src="./IMAGES/call logo.png" alt="call logo">
+              <p>+94 11 7837 078</p>
+            </div>
+            <p class="openmsg">(Open Daily from 9AM to 9PM)</p>
+        </div>
+            <div class="footer-grid">
+              <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                  <li><a href="./vegetablePage.html">Fresh Vegetables</a></li>
+                  <li><a href="./dairyPage.html">Dairy Products</a></li>
+                  <li><a href="./cosmeticsPage.html">Cosmetics and Skin care</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <br>
+                  <li> <a href="./aboutUsPage.html"> About Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Customer Services</h3>
+                <ul>
+                  <li><a href="./#">Sign-up</a></li>
+                  <br>
+                  <li><a href="./#">Login</a></li>
+                </ul>
+              </div>
+            </div>
+        </footer>
+        <div class="container">
+          <div class="copyright">Copyright © 2023 Green Mart Marketing. All rights reserved</div>
+          <div class="payment-methods">
+            <img src="./IMAGES/paymentmethod1.png" alt="Payment Method 1" />
+            <img src="./IMAGES/paymentmethod2.png" alt="Payment Method 2" />
+            <img src="./IMAGES/paymentmethod3.png" alt="Payment Method 3" />
+            <img src="./IMAGES/paymentmethod4.png" alt="Payment Method 4" />
+          </div>
+        </div>
+        </body>
+        </html>
+        

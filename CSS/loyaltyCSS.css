@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 
 .loyalty-scheme {
@@ -165,17 +166,6 @@ body {
       max-width: 400px;
       margin-bottom: 20px;
   }
-  .box h3{
-    font-size: 18px;
-  }
-
-  .box h2{
-    font-size: 17px;
-  }
-
-  .box p{
-    font-size: 13px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -293,7 +283,7 @@ body {
 .form-submit {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 .form-submit input {
@@ -330,5 +320,13 @@ body {
 
   .form-submit input {
       margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .register-form h2{
+    font-size: 17px;
   }
 }

@@ -212,6 +212,8 @@ footer {
 .logofooter {
   width: 200px;
   height: 90px;
+  padding-top: 30px;
+  padding-left: 25px;
 }
 
 ul.social-media {
@@ -654,6 +656,7 @@ footer {
 
   .logofooter {
     padding-left: 3px;
+    padding-top: 0;
   }
 
   .openmsg p,
