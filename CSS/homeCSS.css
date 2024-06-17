@@ -251,6 +251,10 @@ body {
     background-size: cover;
     background-position: center;
   }
+
+  .grid-item1 a, .grid-item2 a, .grid-item3 a {
+    text-decoration: none;
+  }
   
   .grid-item1:last-child, .grid-item2:last-child, .grid-item3:last-child {
     margin-right: 0;
