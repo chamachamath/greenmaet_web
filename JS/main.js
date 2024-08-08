@@ -239,3 +239,24 @@ function clearCart() {
 
 // Event listener for "Clear Cart" button
 document.getElementById('clear-cart').addEventListener('click', clearCart);
+
+// Function to check if the cart is empty
+function isCartEmpty() {
+    const cartTableBody = document.querySelector('.cart-table tbody');
+    return cartTableBody.children.length === 0; // Checks if there are any rows in the cart table
+}
+
+document.getElementById("buy-now").addEventListener("click", function(event) {
+    // Check if the cart is empty
+    if (isCartEmpty()) {
+        // Prevent the default action of the anchor tag
+        event.preventDefault();
+
+        // Display an error message
+        alert("Your cart is empty. Please add items to your cart before proceeding to payment.");
+    } else {
+        // Allow the redirection to the payment page
+        // (No need to do anything here because the default action will be allowed)
+    }
+});
+
