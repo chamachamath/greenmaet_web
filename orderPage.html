@@ -680,10 +680,17 @@ document.getElementById("buy-now").addEventListener("click", function(event) {
         // Display an error message
         alert("Your cart is empty. Please add items to your cart before proceeding to payment.");
     } else {
-        // Allow the redirection to the payment page
-        // (No need to do anything here because the default action will be allowed)
+        // Redirect to the payment page
+        window.location.href = "./paymentPage.html";
     }
 });
+
+// Example implementation of the isCartEmpty function
+function isCartEmpty() {
+    const cartTableBody = document.querySelector('.cart-table tbody');
+    return cartTableBody.children.length === 0;
+}
+
     </script>
   </div>
     <script src="./JS/popup.js"></script>
