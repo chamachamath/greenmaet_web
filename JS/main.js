@@ -240,4 +240,18 @@ function clearCart() {
 // Event listener for "Clear Cart" button
 document.getElementById('clear-cart').addEventListener('click', clearCart);
 
+document.getElementById("buy-now").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent the default link action
+
+  const cartTableBody = document.querySelector('.cart-table tbody');
+
+  // Check if the cart is empty
+  if (cartTableBody.querySelectorAll('tr').length === 0) {
+      alert("Your cart is empty. Please add items to your cart before proceeding to payment.");
+  } else {
+      // Redirect to the payment page
+      window.location.href = "./paymentpage.html";
+  }
+});
+
 
