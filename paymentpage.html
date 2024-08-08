@@ -61,6 +61,51 @@
         }
     </script>
 
+<script>
+  function loadCart() {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const totalPrice = parseFloat(localStorage.getItem('totalPrice')) || 0;
+
+      const cartTableBody = document.querySelector('.cart-table tbody');
+      const totalPriceElement = document.querySelector('.total-price');
+
+      cartItems.forEach(addItemToTable);
+
+      updateTotalPrice(totalPrice);
+  }
+
+  function addItemToTable(cartItem) {
+      const cartTableBody = document.querySelector('.cart-table tbody');
+
+      const row = document.createElement('tr');
+
+      const itemCell = document.createElement('td');
+      itemCell.textContent = cartItem.name;
+      row.appendChild(itemCell);
+
+      const quantityCell = document.createElement('td');
+      quantityCell.textContent = cartItem.quantity;
+      row.appendChild(quantityCell);
+
+      const priceCell = document.createElement('td');
+      priceCell.textContent = `Rs. ${cartItem.price.toFixed(2)} LKR`;
+      row.appendChild(priceCell);
+
+      const totalCell = document.createElement('td');
+      totalCell.textContent = `Rs. ${cartItem.total.toFixed(2)} LKR`;
+      row.appendChild(totalCell);
+
+      cartTableBody.appendChild(row);
+  }
+
+  function updateTotalPrice(totalPrice) {
+      const totalPriceElement = document.querySelector('.total-price');
+      totalPriceElement.textContent = `Rs. ${totalPrice.toFixed(2)} LKR`;
+  }
+
+  window.onload = loadCart;
+</script>
+
 <section class="container1">
   <div class="left">
       <h3>BILLING ADDRESS</h3>
@@ -170,8 +215,23 @@
           }
       </script>      
 </section>
-
-     
+<section class="cart-section">
+  <h2>Your Order Summary</h2>
+  <table class="cart-table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Items will be added here dynamically -->
+    </tbody>
+  </table>
+  <p>Total Price: <span class="total-price">Rs. 0.00 LKR</span></p>
+</section>   
 <footer>
     <div class="footerTop">
       <div class="logoContainer">
