@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Green Mart</title>
+    <link rel="stylesheet" href="./CSS/reset.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/main.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/order.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="./IMAGES/favicon.png">
+</head>
+<body>
+    <header>
+        <!--signup/login bar-->
+        <section>
+            <div class="infoBar">
+                <p>24 hour island wide delivery | Sign-up | Login</p>
+                <img src="./IMAGES/profilepic.png" alt="profilepic">
+            </div>
+        </section>
+        <!--navigation bar-->
+        <nav class="navBar">
+            <div class="logo">
+                <img src="./IMAGES/logo (2).png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutUsPage.html">About Us</a></li>
+                <li><a href="./dairyPage.html">Dairy products</a></li>
+                <li><a href="./vegetablePage.html">Vegetables</a></li>
+                <li><a href="./cosmeticsPage.html">Costemics</a></li>
+                <li><a href="./orderPage.html">Order</a></li>
+                <li><a href="./LoyaltyPage.html">Loyalty</a></li>
+            </ul>
+            <div class="shoppingCart">
+                <img src="./IMAGES/cartlogo.png" alt="Shopping Cart">
+                <p>Rs 0.0</p>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+        </nav>
+        <div class="searchBar">
+            <input type="text" placeholder="Search..." class="searchInput">
+            <button class="searchButton" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navBar ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+
+<section class="container1">
+  <div class="left">
+      <h3>BILLING ADDRESS</h3>
+      <form id="billing-form">
+          Full name
+          <input type="text" id="full-name" placeholder="Enter name" required>
+          Email
+          <input type="text" id="email" placeholder="Enter email">
+          Address
+          <input type="text" id="address" placeholder="Enter address" required>
+          Province
+          <input type="text" id="province" placeholder="Enter Province" required>
+          <div id="zip">
+              <label>
+                  City
+                  <select id="city" required>
+                      <option value="">Choose city..</option>
+                      <option value="Kandy">Kandy</option>
+                      <option value="Colombo">Colombo</option>
+                      <option value="Galle">Galle</option>
+                  </select>
+              </label>
+              <label>
+                  Zip code
+                  <input type="number" id="zip-code" placeholder="Zip code" required>
+              </label>
+          </div>
+      </form>
+  </div>
+  <div class="right">
+      <h3>PAYMENT</h3>
+      <form id="payment-form">
+          Accepted Payments <br>
+          <img src="./IMAGES/paymentmethod1.png" alt="visa">
+          <img src="./IMAGES/paymentmethod2.png" alt="amex">
+          <img src="./IMAGES/paymentmethod3.png" alt="master">
+          <img src="./IMAGES/paymentmethod4.png" alt="koko">
+          <br><br>
+          Credit card number
+          <input type="text" id="card-number" placeholder="Enter card number" required>
+          Exp month
+          <input type="text" id="exp-month" placeholder="Enter Month" required>
+          <div id="zip">
+              <label>
+                  Exp year
+                  <select id="exp-year" required>
+                      <option value="">Choose Year..</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                  </select>
+              </label>
+              <label>
+                  CVV
+                  <input type="number" id="cvv" placeholder="CVV" required>
+              </label>
+          </div>
+      </form>
+      <button type="submit" class="btn" onclick="validateAndProceed()">Proceed to Checkout</button>
+      <div class="overlay" id="overlay"></div>
+      <div class="popup" id="popup">
+          <img src="./IMAGES/cartpopup.png" alt="cart icon">
+          <h2>Thank You!</h2>
+          <p id="order-message">Your order has been successfully placed!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+      </div>
+      
+      <script>    
+          let popup = document.getElementById("popup");
+          let overlay = document.getElementById("overlay");
+          let orderMessage = document.getElementById("order-message");
+      
+          function validateAndProceed() {
+              // Get form elements
+              const fullName = document.getElementById("full-name").value;
+              const email = document.getElementById("email").value;
+              const address = document.getElementById("address").value;
+              const province = document.getElementById("province").value;
+              const city = document.getElementById("city").value;
+              const zipCode = document.getElementById("zip-code").value;
+              const cardNumber = document.getElementById("card-number").value;
+              const expMonth = document.getElementById("exp-month").value;
+              const expYear = document.getElementById("exp-year").value;
+              const cvv = document.getElementById("cvv").value;
+      
+              // Basic validation
+              if (fullName && email && address && province && city && zipCode && cardNumber && expMonth && expYear && cvv) {
+                  const deliveryDate = new Date();
+                  deliveryDate.setDate(deliveryDate.getDate() + 5); // Assuming delivery in 5 days
+                  const formattedDate = deliveryDate.toDateString();
+      
+                  orderMessage.innerHTML = `Your order has been successfully placed!<br>Expected delivery date: ${formattedDate}`;
+                  openPopup();
+              } else {
+                  alert("Please fill out all required fields.");
+              }
+          }
+      
+          function openPopup() {
+              popup.classList.add("open-popup");
+              overlay.classList.add("open-overlay");
+          }
+      
+          function closePopup() {
+              popup.classList.remove("open-popup");
+              overlay.classList.remove("open-overlay");
+          }
+      </script>      
+</section>
+
+     
+<footer>
+    <div class="footerTop">
+      <div class="logoContainer">
+      <img class="logofooter" src="./IMAGES/logo (2).png" alt="Green mart logo">
+      </div>
+      <div class="socialContainer">
+        <ul class="social-media">
+          <li>
+            <img src="./IMAGES/fblogo.png" alt="facebook logo">
+            <a href="www.facebook.com" class="etsy"></a>
+          </li>
+          <li>
+            <img src="./IMAGES/ytlogo.png" alt="youtube logo">
+            <a href="www.youtube.com" class="facebook"></a>
+          </li>
+          <li>
+            <img src="./IMAGES/iglogo.png" alt="instagram logo">
+            <a href="www.instagram.com" class="instagram"></a>
+          </li>
+        </ul>
+    </div>
+    </div>
+    <div class="footerBottom">
+      <div class="footerColumn">
+        <div class="address">
+          <p>Green Mart Marketing Pvt Ltd.</p>
+          <p>No. 151, Colombo Rd, Colombo 4, Sri Lanka</p>
+        </div>
+        <div class="number">
+          <img src="./IMAGES/call logo.png" alt="call logo">
+          <p>+94 11 7837 078</p>
+        </div>
+        <p class="openmsg">(Open Daily from 9AM to 9PM)</p>
+    </div>
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="./vegetablePage.html">Fresh Vegetables</a></li>
+              <li><a href="./dairyPage.html">Dairy Products</a></li>
+              <li><a href="./cosmeticsPage.html">Cosmetics and Skin care</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <br>
+              <li> <a href="./aboutUsPage.html"> About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Customer Services</h3>
+            <ul>
+              <li><a href="./#">Sign-up</a></li>
+              <br>
+              <li><a href="./#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <div class="container">
+      <div class="copyright">Copyright © 2023 Green Mart Marketing. All rights reserved</div>
+      <div class="payment-methods">
+        <img src="./IMAGES/paymentmethod1.png" alt="Payment Method 1" />
+        <img src="./IMAGES/paymentmethod2.png" alt="Payment Method 2" />
+        <img src="./IMAGES/paymentmethod3.png" alt="Payment Method 3" />
+        <img src="./IMAGES/paymentmethod4.png" alt="Payment Method 4" />
+      </div>
+    </div>
+    <script src="./JS/main.js"></script>
+  </body>
+  </html>

@@ -61,128 +61,611 @@
         }
     </script>
 
-<!--my cart table-->
-<section class="cart">
-    <table>
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Image</th>
-                <th>PPU</th>
-                <th>Qty</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ambewela Full Cream Fresh Milk 1000ml</td>
-                <td><img src="./IMAGES/milk1.png" alt="Anchor Milk Powder"></td>
-                <td>530 LKR</td>
-                <td>1</td>
-                <td>530 LKR</td>
-            </tr>
-            <tr>
-                <td>Anchor Drinking Yoghurt Vanilla 180ml</td>
-                <td><img src="./IMAGES/dairy12.jpg" alt="Anchor Drinking Yoghurt Vanilla 180ml"></td>
-                <td>130 LKR</td>
-                <td>2</td>
-                <td>260 LKR</td>
-            </tr>
-            <tr>
-                <td>Glow & Lovely Multivitamin Cream 50g</td>
-                <td><img src="./IMAGES/cos3.jpg" alt="Glow & Lovely Multivitamin Cream 50g"></td>
-                <td>650 LKR</td>
-                <td>1</td>
-                <td>650 LKR</td>
-            </tr>
-            <tr>
-                <td><b>Coconut</b></td>
-                <td><img src="./IMAGES/vege16.jpg" alt="coconut"></td>
-                <td>114 LKR</td>
-                <td>2</td>
-                <td>228 LKR</td>
-            </tr>
-            <tr>
-                <td><b>Janet Ayurveda Wild Tang. Lip Balm 3.5g</B></td>
-                <td><img src="./IMAGES/cos14.jpg" alt="Janet Ayurveda Wild Tang. Lip Balm 3.5g"></td>
-                <td>300 LKR</td>
-                <td>2</td>
-                <td>600 LKR</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4"><b>Grand Total</b></td>
-                <td><b>2,480 LKR</b></td>
-            </tr>
-        </tfoot>
-    </table>
+<section class="background-image">
+  <div class="text-overlay">
+      <h2>Freshly Sourced <br> Vegetables from small <br> farms across the island</h2>
+      <p>Welcome to Green Mart! Discover the freshest locally sourced veggies <br>straight from our country's farms. From crisp lettuce to juicy tomatoes, <br>enjoy premium quality and support local agriculture with every bite.</p>
+  </div>
+</section>
+
+<section>
+  <div class="category-heading">
+    <div class="line"></div>
+    <h2>Browse Our Fresh Vegetables</h2>
+    <div class="line"></div>
+  </div>
+  <div class="item-grid">
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege2.jpg" alt="pumpkin">
+        <p>Pumpkin 100g</p>
+        <p id="price">Rs. 70 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <!-- Repeat the above div structure for each item -->
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege1.jpg" alt="cabbage">
+        <p>Cabbage</p>
+        <p id="price">Rs. 110 LKR / KG</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege3.jpg" alt="Manioc">
+        <p>Manioc 100g</p>
+        <p id="price">Rs. 260 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege4.jpg" alt="tomatoes">
+        <p>Tomatoes 100g</p>
+        <p id="price">Rs. 260 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege6.jpg" alt="Big Onions">
+        <p>Big Onions</p>
+        <p id="price">Rs. 550 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege7.jpg" alt="Potatoes">
+        <p>Potatoes (Local) </p>
+        <p id="price">Rs. 340 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege5.jpg" alt="Carrot">
+        <p>Carrot 100g</p>
+        <p id="price">Rs. 290 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/vege8.jpg" alt="Leaks">
+        <p>Leaks</p>
+        <p id="price">Rs. 260 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+</section>
+
+
+<section>
+  <div class="category-heading">
+    <div class="line"></div>
+    <h2>Browse Our Fresh Fruits</h2>
+    <div class="line"></div>
+  </div>
+  <div class="item-grid">
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits1.jpg" alt="Apple - Green">
+        <p>Apple - Green</p>
+        <p id="price">Rs. 1,860 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <!-- Repeat the above div structure for each item -->
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits2.jpg" alt="Grapes - Black">
+        <p>Grapes - Black </p>
+        <p id="price">Rs. 3,490 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits3.jpg" alt="Banana - Seeni">
+        <p>Banana - Seeni</p>
+        <p id="price">Rs. 250 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits4.jpg" alt="Avocado">
+        <p>Avocado</p>
+        <p id="price">Rs. 460 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits5.jpg" alt="Guava">
+        <p>Guava</p>
+        <p id="price">Rs. 260 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits6.jpg" alt="Melon - Dark Bell">
+        <p>Melon - Dark Bell</p>
+        <p id="price">Rs. 130 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits7.jpg" alt="Papaya">
+        <p>Papaya</p>
+        <p id="price">Rs. 170 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/fruits8.jpg" alt="Pineapple">
+        <p>Pineapple</p>
+        <p id="price">Rs. 768 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+</section>
+
+<section class="dairy-section">
+  <div class="category-heading">
+    <div class="line"></div>
+    <h2>Browse Our Dairy Products</h2>
+    <div class="line"></div>
+  </div>
+  <div class="item-grid">
+    <div class="item">
+            <div class="item-content">
+              <img src="./IMAGES/dairy1.jpg" alt="anchor milk powder">
+              <p>Anchor Full Cream Milk Powder 200g</p>
+              <p id="dairy-price">Rs. 555 LKR</p>
+              <div class="quantity-selector">
+                <button class="dairy-decrement-quantity">-</button>
+                <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+                <button class="dairy-increment-quantity">+</button>
+              </div>
+              <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+            </div>      
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/milk1.png" alt="fresh milk">
+        <p>Ambewela Full Cream Fresh Milk 1000ml</p>
+        <p id="dairy-price">Rs. 530 LKR</p>
+        <div class="quantity-selector">
+          <button class="dairy-decrement-quantity">-</button>
+          <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+          <button class="dairy-increment-quantity">+</button>
+        </div>
+        <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>    
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/dairy2.jpg" alt="Ambewela non fat milk">
+        <p>Ambewela Non Fat Milk <br>1000ml</p>
+        <p id="dairy-price">Rs. 570 LKR</p>
+        <div class="quantity-selector">
+          <button class="dairy-decrement-quantity">-</button>
+          <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+          <button class="dairy-increment-quantity">+</button>
+        </div>
+        <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>    
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/yoghurt1.webp" alt="highland set yoghurt">
+        <p>Highland Set Yoghurt <br> (Vannila) 80g </p>
+        <p id="dairy-price">Rs. 310 LKR</p>
+        <div class="quantity-selector">
+          <button class="dairy-decrement-quantity">-</button>
+          <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+          <button class="dairy-increment-quantity">+</button>
+        </div>
+        <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>  
+    </div>
+    <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/dairy3.jpg" alt="Ratthi Milk Powder">
+          <p>Ratthi Milk Powder <br>400g</p>
+          <p id="dairy-price">Rs. 1050 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/dairy4.jpg" alt="Cic Farm Fresh Curd">
+          <p>Cic Farm Fresh Curd <br> 800ml</p>
+          <p id="dairy-price">Rs. 650 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/DAIRY5.jpg" alt="Kotmale Cheese Wedges">
+          <p>Kotmale Cheese Wedges <br>120g</p>
+          <p id="dairy-price">Rs. 560 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/dairy6.jpg" alt="Eazy Cheezy Cheddar Cheese">
+          <p>Eazy Cheezy Cheddar Cheese <br>Spread 260g</p>
+          <p id="dairy-price">Rs. 730 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+</section>
+
+
+<section>
+  <div class="category-heading">
+    <div class="line"></div>
+    <h2>Browse Our Meat and Seafood</h2>
+    <div class="line"></div>
+  </div>
+  <div class="item-grid">
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/meat1.jpg" alt="Chicken Whole Legs Skinless">
+        <p>Chicken Whole Legs Skinless</p>
+        <p id="price">Rs. 2080 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/meat2.jpg" alt="Chicken Full Breast Skinless">
+        <p>Chicken Full Breast Skinlessl</p>
+        <p id="price">Rs. 1980 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/meat3.jpg" alt="Local Mutton For Curry">
+        <p>Local Mutton For Curry</p>
+        <p id="price">Rs. 3900 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/meat4.jpg" alt="Prawns Medium">
+        <p>Prawns Medium </p>
+        <p id="price">Rs. 1690 LKR</p>
+        <div class="quantity-selector">
+          <button class="decrement-quantity">-</button>
+          <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+          <button class="increment-quantity">+</button>
+        </div>
+        <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>
+    </div>
+    <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/meat5.jpg" alt="Thalapath Small">
+          <p>Thalapath Small</p>
+          <p id="price">Rs. 1990 LKR</p>
+          <div class="quantity-selector">
+            <button class="decrement-quantity">-</button>
+            <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+            <button class="increment-quantity">+</button>
+          </div>
+          <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/meat6.jpg" alt="Lena Paraw">
+          <p>Lena Paraw</p>
+          <p id="price">Rs. 920 LKR</p>
+          <div class="quantity-selector">
+            <button class="decrement-quantity">-</button>
+            <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+            <button class="increment-quantity">+</button>
+          </div>
+          <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/meat7.jpg" alt="Hurulla">
+          <p>Hurulla</p>
+          <p id="price">Rs. 1350 LKR</p>
+          <div class="quantity-selector">
+            <button class="decrement-quantity">-</button>
+            <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+            <button class="increment-quantity">+</button>
+          </div>
+          <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/meat8.jpg" alt="Un Cleaned Cuttlefish">
+          <p>Un Cleaned Cuttlefish</p>
+          <p id="price">Rs. 1650 LKR</p>
+          <div class="quantity-selector">
+            <button class="decrement-quantity">-</button>
+            <input type="number" id="quantity" value="0.5" step="0.5" min="0.5">
+            <button class="increment-quantity">+</button>
+          </div>
+          <a href="./orderPage.html"><button class="addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>
+      </div>
+</section>
+
+<section class="dairy-section">
+  <div class="category-heading">
+    <div class="line"></div>
+    <h2>Browse Our Baking and Cooking Ingredients </h2>
+    <div class="line"></div>
+  </div>
+  <div class="item-grid">
+    <div class="item">
+            <div class="item-content">
+              <img src="./IMAGES/goods1.jpg" alt="Wijaya Chillie Powder 250g">
+              <p>Wijaya Chillie Powder 250g</p>
+              <p id="dairy-price">Rs. 650 LKR</p>
+              <div class="quantity-selector">
+                <button class="dairy-decrement-quantity">-</button>
+                <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+                <button class="dairy-increment-quantity">+</button>
+              </div>
+              <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+            </div>      
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/goods2.jpg" alt="Motha Baking Powder 100g">
+        <p>Motha Baking Powder 100g</p>
+        <p id="dairy-price">Rs. 380 LKR</p>
+        <div class="quantity-selector">
+          <button class="dairy-decrement-quantity">-</button>
+          <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+          <button class="dairy-increment-quantity">+</button>
+        </div>
+        <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>    
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/goods3.jpg" alt="Delmege Essence Vanilla 200ml">
+        <p>Delmege Essence Vanilla 200ml</p>
+        <p id="dairy-price">Rs. 1050 LKR</p>
+        <div class="quantity-selector">
+          <button class="dairy-decrement-quantity">-</button>
+          <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+          <button class="dairy-increment-quantity">+</button>
+        </div>
+        <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>    
+    </div>
+    <div class="item">
+      <div class="item-content">
+        <img src="./IMAGES/goods4.jpg" alt="Seven Star All Purpose Wheat Flour 1kg">
+        <p>Seven Star All Purpose Wheat Flour 1kg</p>
+        <p id="dairy-price">Rs. 275 LKR</p>
+        <div class="quantity-selector">
+          <button class="dairy-decrement-quantity">-</button>
+          <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+          <button class="dairy-increment-quantity">+</button>
+        </div>
+        <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+      </div>  
+    </div>
+    <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/goods5.jpg" alt="Bcc White Coconut Oil Bottle 1L">
+          <p>Bcc White Coconut Oil Bottle 1L</p>
+          <p id="dairy-price">Rs. 1425 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/goods6.jpg" alt="Link Iodised Table Salt 400g">
+          <p>Link Iodised Table Salt 400g</p>
+          <p id="dairy-price">Rs. 120 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/goods7.jpg" alt="Catch Chilli Pieces 100g">
+          <p>Catch Chilli Pieces 100g</p>
+          <p id="dairy-price">Rs. 190 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+      <div class="item">
+        <div class="item-content">
+          <img src="./IMAGES/goods8.jpg" alt="Renuka Coconut Milk Powder 300g">
+          <p>Renuka Coconut Milk Powder 300g</p>
+          <p id="dairy-price">Rs. 850 LKR</p>
+          <div class="quantity-selector">
+            <button class="dairy-decrement-quantity">-</button>
+            <input type="number" id="dairy-quantity" value="1" step="1" min="1">
+            <button class="dairy-increment-quantity">+</button>
+          </div>
+          <button class="dairy-addCart"> Add to Cart <i class="fas fa-cart-plus"></i></button></a>
+        </div>  
+      </div>
+</section>
+
+<section class="cart-section">
+  <h2>Your Cart</h2>
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Unit-Price</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Items will be dynamically added here -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Price:</td>
+        <td class="total-price">Rs. 0.00 LKR</td>
+      </tr>
+    </tfoot>
+  </table>
+  <div class="favourite-buttons">
+    <button id="add-to-favourites">Add to Favourites</button>
+    <button id="apply-favourites">Apply Favourites</button>
+    <button id="clear-cart">Clear Cart</button>
+    <a href="./paymentPage.html"><button id="buy-now">Buy Now</button></a>  </div>
+    <script src="./JS/popup.js"></script>
   </section>
-<section class="container1">
-		<div class="left">
-			<h3>BILLING ADDRESS</h3>
-			<form>
-				Full name
-				<input type="text" name="" placeholder="Enter name">
-				Email
-				<input type="text" name="" placeholder="Enter email">
 
-				Address
-				<input type="text" name="" placeholder="Enter address">
-				
-				Province
-				<input type="text" name="" placeholder="Enter Province">
-				<div id="zip">
-					<label>
-						City
-						<select>
-							<option>Choose city..</option>
-							<option>Kandy</option>
-							<option>Colombo</option>
-							<option>Galle</option>
-						</select>
-					</label>
-						<label>
-						Zip code
-						<input type="number" name="" placeholder="Zip code">
-					</label>
-				</div>
-			</form>
-		</div>
-		<div class="right">
-			<h3>PAYMENT</h3>
-			<form>
-				Accepted Payments <br>
-				<img src="./IMAGES/paymentmethod1.png" alt="visa">
-				<img src="./IMAGES/paymentmethod2.png" alt="amex">
-                <img src="./IMAGES/paymentmethod3.png" alt="master">
-                <img src="./IMAGES/paymentmethod4.png" alt="koko">
-				<br><br>
-
-				Credit card number
-			<input type="text" name="" placeholder="Enter card number">
-				
-				Exp month
-				<input type="text" name="" placeholder="Enter Month">
-				<div id="zip">
-					<label>
-						Exp year
-						<select>
-							<option>Choose Year..</option>
-							<option>2024</option>
-							<option>2025</option>
-							<option>2026</option>
-						</select>
-					</label>
-						<label>
-						CVV
-						<input type="number" name="" placeholder="CVV">
-					</label>
-				</div>
-			</form>
-			<input type="submit" name="" value="Proceed to Checkout">
-		</div>
-	</section>
     <footer>
         <div class="footerTop">
           <div class="logoContainer">
@@ -252,7 +735,9 @@
             <img src="./IMAGES/paymentmethod3.png" alt="Payment Method 3" />
             <img src="./IMAGES/paymentmethod4.png" alt="Payment Method 4" />
           </div>
+        </div>       
         </div>
+        <script src="./JS/main.js"></script>
         </body>
         </html>
         
