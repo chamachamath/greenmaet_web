@@ -39,7 +39,6 @@ html {
     color: #ffffff;
     margin: 0 10px;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
     font-variation-settings:
@@ -84,7 +83,6 @@ html {
     padding: 0px 10px;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
@@ -137,7 +135,6 @@ html {
     color: #ffffff;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-variation-settings:
@@ -278,7 +275,6 @@ ul.social-media img {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings:
@@ -309,7 +305,6 @@ ul.social-media img {
   color: #04df0c;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
@@ -321,7 +316,6 @@ ul.social-media img {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings:
@@ -416,7 +410,6 @@ footer {
   text-align: left;
   color: #10d901;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
@@ -439,7 +432,6 @@ footer {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
@@ -469,7 +461,6 @@ footer {
   text-align: left;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
@@ -561,7 +552,6 @@ footer {
       top: 0;
       left: -112.8%;
       background-image: url(../IMAGES/responsive.png);
-      background-position: cover;
       background-repeat: no-repeat;
       background-size: cover;
       transition: 0.5s;
@@ -634,7 +624,6 @@ footer {
 
   .searchButton {
     width: 14%;
-    text-overflow: hidden;
   }
 }
 
